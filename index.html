@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offizielle Website des Ersten Cannabis Social Club Homberg e.V.">
+    <title>Erster Cannabis Social Club Homberg e.V.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Altersabfrage -->
+    <div id="age-verification">
+        <div class="verification-box">
+            <p>Bist du über 18 Jahre alt?</p>
+            <button id="yes-button">Ja</button>
+            <button id="no-button">Nein</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo des Vereins">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#mitglied-werden">Mitglied werden</a></li>
+                <li><a href="#veranstaltungen">Veranstaltungen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#impressum">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="hero">
+            <h1>Willkommen beim Ersten Cannabis Social Club Homberg e.V.!</h1>
+            <p>Gemeinsam für einen verantwortungsvollen Umgang mit Cannabis.</p>
+        </div>
+        <div class="mission">
+            <h2>Unsere Mission</h2>
+            <p>Unser Ziel ist es, eine Gemeinschaft für verantwortungsbewussten Cannabiskonsum zu schaffen und die Aufklärung in der Region Homberg zu fördern.</p>
+            <a href="#mitglied-werden" class="button">Mitglied werden</a>
+        </div>
+    </section>
+
+    <!-- Mitglied werden -->
+    <section id="mitglied-werden">
+        <h2>Mitglied werden</h2>
+        <div class="benefits">
+            <h3>Vorteile der Mitgliedschaft</h3>
+            <ul>
+                <li>Zugang zu Veranstaltungen</li>
+                <li>Austausch mit Gleichgesinnten</li>
+                <li>Aktive Gestaltung des Vereins</li>
+            </ul>
+        </div>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail-Adresse:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Warum möchtest du Mitglied werden?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox" name="privacy" required>
+                Ich stimme den Datenschutzrichtlinien zu.
+            </label>
+
+            <button type="submit" class="button">Mitgliedsantrag senden</button>
+        </form>
+    </section>
+
+    <!-- Veranstaltungen -->
+    <section id="veranstaltungen">
+        <h2>Veranstaltungen</h2>
+        <div class="event">
+            <h3>Infoabend "Cannabis und Gesellschaft"</h3>
+            <p>15.01.2024, Ort: Stadtzentrum Homberg</p>
+        </div>
+        <div class="event">
+            <h3>Jahreshauptversammlung 2024</h3>
+            <p>10.02.2024, Vereinsraum Duisburg</p>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form action="#" method="POST">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">E-Mail-Adresse:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="subject">Betreff:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit" class="button">Nachricht senden</button>
+        </form>
+        <div class="address">
+            <p>Duisburger Straße 221, 47198 Duisburg</p>
+        </div>
+    </section>
+
+    <!-- Impressum -->
+    <footer id="impressum">
+        <h2>Impressum</h2>
+        <p>Verantwortlich: Silvia Großmann</p>
+        <p>Duisburger Straße 221, 47198 Duisburg</p>
+        <p>Email: [wird hinzugefügt]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
